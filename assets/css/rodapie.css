@@ -1,0 +1,32 @@
+.rodapie p{
+    color: #ecebeb;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1440px) { 
+    .rodapie p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    .rodapie p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .rodapie p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rodapie p{
+        font-size: 14px;
+    }
+}
