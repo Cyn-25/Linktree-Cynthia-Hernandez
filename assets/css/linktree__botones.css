@@ -45,6 +45,7 @@
     color: #ffffff;
     box-shadow: 0 0 5px #ff5e8e, 0 0 15px #ff5e8e;
     text-shadow: 0 0 7px rgb(255, 112, 191);
+    cursor:pointer;
 }
 
 @media screen and (max-width: 1440px) {
