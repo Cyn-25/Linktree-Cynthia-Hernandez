@@ -7,7 +7,7 @@
 }
 
 .profile{
-    width: 22%;
+    width: 20%;
     flex-shrink: 0;
     border-radius: 50%;
     box-shadow: 0 0 5px #fd2e70, 0 0 25px #fd2e70, 0 0 40px #fd2e70;
@@ -45,15 +45,18 @@
 
 @media screen and (max-width: 1024px) {
     .profile {
-        width: 32%;
+        width: 34%;
         margin-bottom: 4%;
     }
     .sobre--mi__titulo{
-        font-size: 42px;
+        font-size: 44px;
     }
     .sobre--mi__descripcion{
-        margin: 10px 0 10px;
-        font-size: 22px;
+        margin: 0;
+        font-size: 32px;
+    }
+    .linktree__profile-area {
+        margin-top: 0;
     }
 
 }
@@ -78,7 +81,7 @@
         margin-bottom: 6%;
     }
     .sobre--mi__titulo{
-        font-size: 40px;
+        font-size:38px;
     }
     .sobre--mi__descripcion{
         margin: 10px 0 10px;

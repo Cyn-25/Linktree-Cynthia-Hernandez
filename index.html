@@ -10,7 +10,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="./assets/css/normalize.css" />
@@ -41,36 +40,73 @@
         </header>
 
         <main>
-
             <section class="linktree__botones" id="linktree__botones">
                 <div class="linktree__boton">
-                    <a href="https://www.linkedin.com/in/cynthia-hernandez-rodriguez-iaev/" target="_blank"><button class="boton--link" id="boton--link">LinkedIn</button></a>
-                </div>
-                
-                <div class="linktree__boton">
-                    <a href="https://cynthia_hr.artstation.com/" target="_blank"><button class="boton--link" id="boton--link">3D Portfolio</button></a>
-                </div>
-                
-                <div class="linktree__boton">
-                    <a href="https://cyn-25.github.io/Web-Portfolio/" target="_blank"><button class="boton--link" id="boton--link">Web Developer Portfolio</button></a>
-                </div>
-
-                <div class="linktree__boton">
-                    <a href="./assets/archivos/CV(espanol).pdf" target="_blank"><button class="boton--link" id="boton--link">CV Spanish</button></a>
+                    <a id="boton-link" href="https://www.linkedin.com/in/cynthia-hernandez-rodriguez-iaev/" target="_blank">
+                        <button class="boton--link" id="boton--link">
+                            <div class="link__img-area">
+                                <img src="./assets/img/linkedin.png" alt="Logo linkedin" class="link__img">
+                            </div>
+                            <div class="link-text">LinkedIn</div>
+                            
+                        </button>
+                    </a>
                 </div>
 
                 <div class="linktree__boton">
-                    <a href="./assets/archivos/CV(english).pdf" target="_blank"><button class="boton--link" id="boton--link">CV English</button></a>
+                    <a href="https://cynthia_hr.artstation.com/" target="_blank">
+                        <button class="boton--link" id="boton--link">
+                            <div class="link__img-area">
+                                <img src="./assets/img/modelado.png" alt="Logo 3D portfolio" class="link__img">
+                            </div>
+                            <div class="link-text">3D Portfolio</div>
+                        </button>
+                    </a>
                 </div>
 
                 <div class="linktree__boton">
-                    <a href="mailto:ing.cynthiahr@gmail.com" target="_blank"><button class="boton--link" id="boton--link">Send email</button></a>
-                </div>                
+                    <a href="https://cyn-25.github.io/Web-Portfolio/" target="_blank">
+                        <button class="boton--link" id="boton--link">
+                            <div class="link__img-area">
+                                <img src="./assets/img/web.png" alt="Logo Web Developer" class="link__img">
+                            </div>
+                            <div class="link-text">Web Developer Portfolio</div>
+                        </button>
+                    </a>
+                </div>
 
                 <div class="linktree__boton">
-                    <a href="https://www.instagram.com/tiny_ghost8/" target="_blank"><button class="boton--link" id="boton--link">Instagram</button></a>
+                    <a href="./assets/archivos/CV(english).pdf" target="_blank">
+                        <button class="boton--link" id="boton--link">
+                            <div class="link__img-area">
+                                <img src="./assets/img/cv-eng.png" alt="Logo CV English" class="link__img">
+                            </div>
+                            <div class="link-text">CV English</div>
+                        </button>
+                    </a>
                 </div>
-            
+
+                <div class="linktree__boton">
+                    <a href="./assets/archivos/CV(espanol).pdf" target="_blank">
+                        <button class="boton--link" id="boton--link">
+                            <div class="link__img-area">
+                                <img src="./assets/img/cv-esp.png" alt="Logo CV Spanish" class="link__img">
+                            </div>
+                            <div class="link-text">CV Spanish</div>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="linktree__boton">
+                    <a href="mailto:ing.cynthiahr@gmail.com" target="_blank">
+                        <button class="boton--link" id="boton--link">
+                            <div class="link__img-area">
+                                <img src="./assets/img/email.png" alt="Logo CV Spanish" class="link__img">
+                            </div>
+                            <div class="link-text">Send email</div>
+                        </button>
+                    </a>
+                </div>                        
             </section>
         </main>
 
@@ -79,6 +115,6 @@
                 <p class="rodapie__informacion" data-section="footer" data-value="footer_text">2024 Developed by Cynthia Hernández</p>
             </section>
         </footer>
-        <script src="js/script.js"></script>
+
     </body>
 </html>
