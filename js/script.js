@@ -26,7 +26,7 @@ function getCookie(name) {
 
 // Función para cargar dinámicamente las traducciones
 async function loadTranslations(language) {
-    const requestJson = await fetch(`../languages/${language}.json`);
+    const requestJson = await fetch(`/languages/${language}.json`);
     return await requestJson.json();
 }
 
