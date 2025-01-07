@@ -1,0 +1,41 @@
+.flags{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.flags__item{
+    width: 44%;
+}
+
+.flags__item:hover{
+    width: 48%;
+    box-shadow: 0 0 5px #fd2e5b, 0 0 25px #fd2e62, 0 0 50px #fd2e5b;
+}
+
+.flags__img{
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .flags{
+        width: 135px;
+    }
+    .flags__item:hover{
+        width: 44%;
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .flags{
+        width: 30%;
+    }
+
+    .flags__item:hover{
+        width: 44%;
+        box-shadow: none;
+    }
+}

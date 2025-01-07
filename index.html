@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title data-section="title" data-value="link-tree">Cynthia Hernandez | LinkTree</title>
+        <title>Cynthia Hernandez | LinkTree</title>
         <link rel="icon" href="tree.ico">
         <link name="viewport" content="width=device-width">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,13 +12,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./assets/css/encabezado.css">
+        <link rel="stylesheet" href="./assets/css/flags.css">
         <link rel="stylesheet" href="./assets/css/normalize.css" />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/bases.css" />
-        <link rel="stylesheet" href="./assets/css/flexbox.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="./assets/css/encabezado/encabezado.css" />
-        <link rel="stylesheet" href="./assets/css/encabezado/flags.css" />
         <link rel="stylesheet" href="./assets/css/rodapie.css">
         <link rel="stylesheet" href="./assets/css/linktree__profile.css">
         <link rel="stylesheet" href="./assets/css/linktree__botones.css">
@@ -26,7 +25,20 @@
         
     </head>
     <body>
-        <header class="encabezado">     
+        <header class="encabezado"> 
+            <div class="flags" id="flags">
+                <div class="flags__item" data-language="es">
+                    <img src="./assets/img/spanish.svg" alt="" class="flags__img">
+                </div>
+
+                <div class="flags__item" data-language="en">
+                    <img src="./assets/img/english.svg" alt="" class="flags__img">
+                </div>
+            </div>
+            
+        </header>
+
+        <main>
             <section class="linktree__profile">
                 <div class="linktree__profile-area" >
                     <img class="profile" src="./assets/img/profile.png" alt="profile picture">
@@ -34,12 +46,9 @@
                 
                 <div class="linktree__profile-contenido">
                     <h2 class="sobre--mi__titulo">Cynthia Hernández</h2>
-                    <p class="sobre--mi__descripcion">3D Artist | Web Developer</p> 
+                    <p class="sobre--mi__descripcion" data-section="fields" data-value="field-text">3D Artist | Web Developer | Graphic Designer </p> 
                 </div>
-            </section>    
-        </header>
-
-        <main>
+            </section> 
             <section class="linktree__botones" id="linktree__botones">
                 <div class="linktree__boton">
                     <a id="boton-link" href="https://www.linkedin.com/in/cynthia-hernandez-rodriguez-iaev/" target="_blank">
@@ -48,7 +57,6 @@
                                 <img src="./assets/img/linkedin.png" alt="Logo linkedin" class="link__img">
                             </div>
                             <div class="link-text">LinkedIn</div>
-                            
                         </button>
                     </a>
                 </div>
@@ -59,7 +67,7 @@
                             <div class="link__img-area">
                                 <img src="./assets/img/modelado.png" alt="Logo 3D portfolio" class="link__img">
                             </div>
-                            <div class="link-text">3D Portfolio</div>
+                            <div class="link-text" data-section="links" data-value="link-3d">3D Portfolio</div>
                         </button>
                     </a>
                 </div>
@@ -70,12 +78,23 @@
                             <div class="link__img-area">
                                 <img src="./assets/img/web.png" alt="Logo Web Developer" class="link__img">
                             </div>
-                            <div class="link-text">Web Developer Portfolio</div>
+                            <div class="link-text" data-section="links" data-value="link-web">Web Developer Portfolio</div>
                         </button>
                     </a>
                 </div>
 
                 <div class="linktree__boton">
+                    <a href="https://www.behance.net/cynthiahr25/projects" target="_blank">
+                        <button class="boton--link" id="boton--link">
+                            <div class="link__img-area">
+                                <img src="./assets/img/design.png" alt="Logo Design portfolio" class="link__img">
+                            </div>
+                            <div class="link-text" data-section="links" data-value="link-design">Design Portfolio</div>
+                        </button>
+                    </a>
+                </div>
+
+                <!--<div class="linktree__boton">
                     <a href="./assets/archivos/CV(english).pdf" target="_blank">
                         <button class="boton--link" id="boton--link">
                             <div class="link__img-area">
@@ -95,6 +114,17 @@
                             <div class="link-text">CV Spanish</div>
                         </button>
                     </a>
+                </div>-->
+
+                <div class="linktree__boton">
+                    <a id="resumeLink" href="#" target="_blank">
+                        <button class="boton--link" id="resumeButton">
+                            <div class="link__img-area">
+                                <img src="./assets/img/cv-esp.png" alt="Logo CV" class="link__img">
+                            </div>
+                            <div class="link-text" data-section="links" data-value="link-resume">My Resume</div>
+                        </button>
+                    </a>
                 </div>
 
                 <div class="linktree__boton">
@@ -103,7 +133,7 @@
                             <div class="link__img-area">
                                 <img src="./assets/img/email.png" alt="Logo CV Spanish" class="link__img">
                             </div>
-                            <div class="link-text">Send email</div>
+                            <div class="link-text" data-section="links" data-value="link-email">Send email</div>
                         </button>
                     </a>
                 </div>                        
@@ -112,9 +142,10 @@
 
         <footer>
             <section class="rodapie">
-                <p class="rodapie__informacion" data-section="footer" data-value="footer_text">2024 Developed by Cynthia Hernández</p>
+                <p class="rodapie__informacion" data-section="footer" data-value="footer_text" data-section="footer" data-value="footer-text">2024 Developed by Cynthia Hernández</p>
             </section>
         </footer>
+        <script src="/assets/js/script.js"></script>
 
     </body>
 </html>

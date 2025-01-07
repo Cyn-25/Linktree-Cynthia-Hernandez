@@ -1,0 +1,7 @@
+.encabezado{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1% 2% 0 1%;;
+    position: sticky;
+}

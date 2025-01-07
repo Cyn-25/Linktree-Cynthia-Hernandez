@@ -1,0 +1,18 @@
+{
+    "fields":{
+        "field-text": "3D Artist | Web Developer | Graphic Designer "
+    },
+
+    "links": {
+        "link-3d": "3D Portfolio",
+        "link-web":"Web Developer Portfolio",
+        "link-design": "Design Portfolio",
+        "link-resume": "My Resume",
+        "link-email": "Send email"
+    } ,
+
+    "footer": {
+        "footer_text": "2024 Developed by Cynthia Hernández"
+    }
+
+}
