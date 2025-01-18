@@ -34,7 +34,7 @@ async function loadTranslations(language) {
 async function changeLanguage(language) {
     const textsToChange = document.querySelectorAll("[data-section]");
     const texts = await loadTranslations(language);
-    console.log(texts); // Verifica qué datos se cargaron
+    
 
     textsToChange.forEach((textToChange) => {
         const section = textToChange.dataset.section;

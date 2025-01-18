@@ -50,13 +50,11 @@ main {
 footer {
     background-color: var(--background-footer);
     width: 100%; 
-    padding: 1% 0;
+    padding: .25% 0;
 }
 
 @media screen and (max-width: 1440px) {
-    body{
-        margin-top: 2%;
-    }
+
     main{
         padding-right: 0;
         padding-left: 0;
@@ -82,9 +80,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    body{
-        margin-top: 2%;
-    }
+
     main{
         padding-right: 0;
         padding-left: 0;
@@ -98,9 +94,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    body{
-        margin-top: 7%;
-    }
     main{
         padding-right: 0;
         padding-left: 0;
